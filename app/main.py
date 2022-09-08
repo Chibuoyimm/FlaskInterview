@@ -52,7 +52,7 @@ class Template(db.Document):
 
 @app.route("/")
 def root():
-    return {"message": "Hello, world"}
+    return {"message": "Hello, world!"}
 
 @swag_from("register_doc.yml")  # swagger documentation
 @app.route("/register", methods=["POST"])
