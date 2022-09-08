@@ -12,7 +12,6 @@ Flask==2.2.2
 flask-mongoengine==1.0.0
 flask-restplus==0.13.0
 Flask-WTF==1.0.1
-flasksloovi==1.0
 http-exceptions==0.2.10
 idna==3.3
 importlib-metadata==4.12.0
