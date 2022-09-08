@@ -54,7 +54,7 @@ class Template(db.Document):
 def root():
     return {"message": "Hello, world"}
 
-@swag_from(r"..\documentation\register_doc.yml")  # swagger documentation
+@swag_from(r"flasksloovi\documentation\register_doc.yml")  # swagger documentation
 @app.route("/register", methods=["POST"])
 def register():
     user_credentials = request.json
@@ -63,7 +63,7 @@ def register():
 
     return make_response("Sucessfully created user", 201)
 
-@swag_from(r"..\documentation\login_doc.yml")  # swagger documentation
+@swag_from(r"flasksloovi\documentation\login_doc.yml")  # swagger documentation
 @app.route("/login", methods=["POST"])
 def login():
     user_credentials = request.json
