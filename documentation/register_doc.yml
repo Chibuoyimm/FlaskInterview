@@ -1,0 +1,33 @@
+summary: "Register User"
+description: "Endpoint to create user"
+produces:
+- "application/json"
+parameters:
+- in: "first_name"
+  name: "first_name"
+  type: "string"
+  required: "true"
+- in: "last_name"
+  name: "last_name"
+  type: "string"
+  required: "true"
+- in: "email"
+  name: "email"
+  type: "string"
+  required: "true"
+- in: "password"
+  name: "password"
+  type: "string"
+  required: "true"
+responses:
+  201:
+    description: "Sucessfully created user"
+    schema:
+      type: "object"
+      properties:
+        data:
+          type: "object"
+        status:
+          type: "string"
+        message:
+          type: "string"

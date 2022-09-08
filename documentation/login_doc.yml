@@ -1,0 +1,28 @@
+summary: "Login User"
+description: "Endpoint to login user"
+produces:
+- "application/json"
+parameters:
+- in: "email"
+  name: "email"
+  type: "string"
+  required: "true"
+- in: "password"
+  name: "password"
+  type: "string"
+  required: "true"
+responses:
+  200:
+    description: "returns token"
+    schema:
+      type: "object"
+      properties:
+        data:
+          type: "object"
+        status:
+          type: "string"
+        message:
+          type: "string"
+
+  403:
+    description: "Invalid Credentials"
