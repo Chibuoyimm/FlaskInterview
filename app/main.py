@@ -56,7 +56,7 @@ def register():
     user_credentials = request.json
     user = User(**user_credentials)  # This unpacks the json into the model and sets each field correctly
     user.save()
-
+    
     return make_response("Sucessfully created user", 201)
 
 @swag_from("login_doc.yml")  # swagger documentation
