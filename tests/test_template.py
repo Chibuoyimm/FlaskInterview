@@ -61,7 +61,7 @@ def test_unauthorized_user_delete_template(client):
 
 # Test if an authorized user can delete template created by them
 def test_delete_template_success(client, token):
-    res = client.delete(f"/template/21", headers={"Authorization": f"Bearer {token}"})
+    res = client.delete(f"/template/23", headers={"Authorization": f"Bearer {token}"})
     assert res.status_code == 204
 
 
